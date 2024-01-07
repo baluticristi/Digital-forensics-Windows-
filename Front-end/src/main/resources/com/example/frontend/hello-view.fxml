@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.frontend.controllers.HelloController">
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20" />
+  </padding>
+  <Button text="Analiza Statica" fx:id="btnWindow1" onAction="#openWindow1"/>
+  <Button text="Analiza Dinamica" fx:id="btnWindow2" onAction="#openWindow2"/>
+  <Button text="Vizualizare Rapoarte" fx:id="btnWindow3" onAction="#openWindow3"/>
+  <Button text="Editare Configuratii" fx:id="btnWindow4" onAction="#openWindow4"/>
+
+</VBox>
