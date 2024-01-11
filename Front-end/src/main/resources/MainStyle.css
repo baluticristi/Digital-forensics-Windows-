@@ -1,0 +1,17 @@
+/* your-stylesheet.css */
+
+.button-pop {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 2, 2);
+    -fx-transition: background 0.3s;
+}
+
+.button-pop:hover {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #3498db);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 5, 5);
+}
