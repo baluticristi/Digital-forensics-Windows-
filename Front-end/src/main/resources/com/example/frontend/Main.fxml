@@ -3,18 +3,37 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.frontend.controllers.HelloController"
-      prefWidth="300"
-      prefHeight="400">
-  <padding>
-    <Insets top="20" right="20" bottom="20" left="20" />
-  </padding>
-  <Button text="Analiza Statica" fx:id="btnWindow1" onAction="#openWindow1"/>
-  <Button text="Analiza Dinamica" fx:id="btnWindow2" onAction="#openWindow2"/>
-  <Button text="Vizualizare Rapoarte" fx:id="btnWindow3" onAction="#openWindow3"/>
-  <Button text="Editare Configuratii" fx:id="btnWindow4" onAction="#openWindow4"/>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.Image?>
+<StackPane xmlns = "http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.frontend.controllers.HelloController"
+           prefWidth="300"
+           prefHeight="400"
+           alignment="CENTER"
+           stylesheets="@../../../MainStyle.css"
+>
+  <VBox spacing="10" alignment="CENTER">
 
-</VBox>
+    <ImageView fitWidth="100" fitHeight="100" preserveRatio="true" fx:id="logoImageView">
+      <Image url="@../../../logo.png"/>
+    </ImageView>
+
+
+    <VBox spacing="20" alignment="CENTER">
+      <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+      </padding>
+
+      <JFXButton fx:id="btnWindow1" onAction="#openWindow1" styleClass="button-pop" text="Analiza Statica"/>
+      <JFXButton text="Analiza Dinamica" fx:id="btnWindow2" onAction="#openWindow2"  styleClass="button-pop"/>
+      <JFXButton text="Vizualizare Rapoarte" fx:id="btnWindow3" onAction="#openWindow3"  styleClass="button-pop"/>
+      <JFXButton text="Editare Configuratii" fx:id="btnWindow4" onAction="#openWindow4"  styleClass="button-pop"/>
+
+    </VBox>
+  </VBox>
+</StackPane>

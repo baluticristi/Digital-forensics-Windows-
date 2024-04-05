@@ -1,23 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: $Title$
-  labels:
-    app: $Title$
+  name: analyzer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: $Title$
+      app: analyzer
   template:
     metadata:
-      name: $Title$
       labels:
-        app: $Title$
+        app: analyzer
     spec:
       containers:
-        - name: $Title$
-          image: $Image$
-          imagePullPolicy: IfNotPresent
-      restartPolicy: Always
-      $END$
+        - name: analyzer
+          image: mwkido/analyzer:latest
+          ports:
+            - containerPort: 5750
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: analyzer-service
+spec:
+  selector:
+    app: analyzer
+  ports:
+    - protocol: TCP
+      port: 5750
+      targetPort: 5750
+  type: LoadBalancer

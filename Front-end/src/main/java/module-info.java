@@ -3,6 +3,8 @@ module com.example.frontend {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires org.json;
+    requires com.jfoenix;
 
     opens com.example.frontend to javafx.fxml;
     exports com.example.frontend;

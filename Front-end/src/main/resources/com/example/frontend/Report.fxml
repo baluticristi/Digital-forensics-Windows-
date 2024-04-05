@@ -6,9 +6,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.frontend.controllers.ReportController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.geometry.Insets?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.frontend.controllers.HelloController"
+           stylesheets="@../../../MainStyle.css">
 
-</AnchorPane>
+    <Button text="Back" fx:id="backButton" onAction="#backFunction"
+            StackPane.alignment="TOP_LEFT" styleClass="button-pop"> <!-- Aligns this button to the top left -->
+        <StackPane.margin>
+            <Insets top="20" left="20"></Insets>
+        </StackPane.margin>
+    </Button>
+    <VBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 40;" fx:id="vBoxContainer" >
+        <ListView fx:id="clickableListView" />
+        <StackPane.margin>
+            <Insets top="60" />
+        </StackPane.margin>
+    </VBox>
+
+</StackPane>

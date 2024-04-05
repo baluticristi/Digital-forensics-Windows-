@@ -15,3 +15,35 @@
     -fx-background-color: linear-gradient(to bottom, #2980b9, #3498db);
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 5, 5);
 }
+
+.radial-fade {
+    -fx-background-color: radial-gradient(radius 50%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    -fx-padding: 5px; /* Adjust padding as needed */
+}
+
+.list-view {
+    -fx-background-color: #fff; /* Change the background color of the ListView */
+    -fx-background-radius: 10; /* Rounded corners for the ListView background */
+    -fx-border-radius: 10; /* Change the background color of the ListView */
+}
+
+.list-cell {
+    -fx-padding: 10px; /* Increase cell padding to make them taller */
+    -fx-border-color: transparent transparent lightgrey transparent; /* Add a border to the bottom of each cell */
+    -fx-border-width: 0 0 1 0; /* Specify the width of the border lines */
+
+    /* Use a linear gradient to simulate a shine effect */
+    -fx-background-color: linear-gradient(to bottom, #e0f5ff 0%, #b3e0ff 100%);
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: linear-gradient(to bottom, #c2dfff 0%, #9ec2ff 50%, #c2dfff 100%); /* Change for selected cell */
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: linear-gradient(to bottom, #d1eaff 0%, #a9d6ff 50%, #d1eaff 100%); /* Change on hover */
+}
+
+.list-cell:empty {
+    -fx-border-color: transparent; /* No borders for empty cells */
+}

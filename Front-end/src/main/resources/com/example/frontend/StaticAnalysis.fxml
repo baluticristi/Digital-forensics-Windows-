@@ -6,9 +6,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.frontend.controllers.StaticController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.geometry.Insets?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.frontend.controllers.HelloController"
+           stylesheets="@../../../MainStyle.css">
+    <Button text="Back" fx:id="backButton" onAction="#backFunction"
+            StackPane.alignment="TOP_LEFT" styleClass="button-pop"> <!-- Aligns this button to the top left -->
+        <StackPane.margin>
+            <Insets top="20" left="20"></Insets>
+        </StackPane.margin>
+    </Button>
+    <Label fx:id="staticStatus" text="The files are ready to analyze">
+        <StackPane.margin>
+            <Insets top="60" />
+        </StackPane.margin>
+    </Label>
+    <ProgressBar fx:id="progressBar" prefWidth="200" />
 
-</AnchorPane>
+    <Button fx:id="sendConfig" onAction="#runProgressBar" styleClass="button-pop" text="Analyze" StackPane.alignment="BOTTOM_CENTER"> <!-- Aligns this button to the top left -->
+        <StackPane.margin>
+            <Insets bottom="20" />
+        </StackPane.margin>
+    </Button>
+</StackPane>

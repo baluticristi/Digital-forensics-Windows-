@@ -6,9 +6,52 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.frontend.controllers.DynamicController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.frontend.controllers.HelloController"
+           prefHeight="400.0" prefWidth="600.0"
+           stylesheets="@../../../MainStyle.css">
+    <Button text="Back" fx:id="backButton" onAction="#backFunction"
+            styleClass="button-pop" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"/>
 
-</StackPane>
+    <Label text="Dynamic Analysis" AnchorPane.topAnchor="70" AnchorPane.leftAnchor="100" />
+
+    <ProgressIndicator fx:id="progressIndicator" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="120" />
+
+    <GridPane AnchorPane.topAnchor="190" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="40">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+        </rowConstraints>
+
+        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Label text="CPU Usage" />
+            <ProgressBar fx:id="cpuProgressBar" progress="0.5" />
+            <Label text="50%" />
+        </VBox>
+
+        <VBox GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label text="Memory Usage" />
+            <ProgressBar fx:id="memoryProgressBar" progress="0.7" />
+            <Label text="70%" />
+        </VBox>
+
+        <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Label text="Disk Space" />
+            <ProgressBar fx:id="diskProgressBar" progress="0.3" />
+            <Label text="30%" />
+        </VBox>
+
+        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Label text="Network Activity" />
+            <ProgressBar fx:id="networkProgressBar" progress="0.8" />
+            <Label text="80%" />
+        </VBox>
+    </GridPane>
+
+</AnchorPane>

@@ -1,13 +1,32 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: $Title$
-  labels:
-    app: $Title$
+  name: main-server-deployment
 spec:
-  containers:
-    - name: $Title$
-      image: $Image$
-      imagePullPolicy: IfNotPresent
-  restartPolicy: Always
-  $END$
+  replicas: 1
+  selector:
+    matchLabels:
+      app: main-server
+  template:
+    metadata:
+      labels:
+        app: main-server
+    spec:
+      containers:
+        - name: main-server
+          image: mwkido/licenta_cristian:latest
+          ports:
+            - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: main-server-service
+spec:
+  selector:
+    app: main-server
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: LoadBalancer

@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.frontend.controllers.ConfigurareController"
-            prefHeight="400.0" prefWidth="600.0">
+<StackPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../MainStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend.controllers.HelloController">
+    <Button fx:id="backButton" onAction="#backFunction" styleClass="button-pop" text="Back" StackPane.alignment="TOP_LEFT"> <!-- Aligns this button to the top left -->
+        <StackPane.margin>
+            <Insets left="20" top="20" />
+        </StackPane.margin>
+    </Button>
+    <VBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 40;">
+        <Label fx:id="optionsLabel" text="Select the options you want to enable:" />
+        <JFXCheckBox fx:id="registreCheck" text="Verify Registries" />
+        <JFXCheckBox fx:id="ramCheck" text="Verify RAM" />
+        <JFXCheckBox fx:id="edrCheck" text="Enable EDR" />
+        <JFXCheckBox fx:id="autopsyCheck" text="Allow Autopsy plugin" />
+      <StackPane.margin>
+         <Insets top="80.0" />
+      </StackPane.margin>
+    </VBox>
+    <Button fx:id="sendConfig" onAction="#setSendConfig" styleClass="button-pop" text="Done" StackPane.alignment="BOTTOM_CENTER"> <!-- Aligns this button to the top left -->
+        <StackPane.margin>
+            <Insets bottom="20" />
+        </StackPane.margin>
+    </Button>
 
-</AnchorPane>
+</StackPane>
