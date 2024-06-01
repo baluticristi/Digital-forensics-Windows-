@@ -6,10 +6,12 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.RadialGradient;
 import javafx.scene.paint.Stop;
 import javafx.scene.shape.Circle;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
@@ -29,14 +31,29 @@ import java.net.HttpURLConnection;
 import java.io.OutputStream;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import org.json.JSONObject;
-import org.json.JSONArray;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
+import org.json.JSONObject;
 
 
 
 public class HelloController {
 
+    public Button reportDynamic;
+    public ProgressIndicator staticprogress;
+    public Button selectImage;
+    public Button generateImage;
+    public HBox analyzed;
+    public Button detail4;
+    public Button detail3;
+    public Button detail2;
+    public Button detail1;
+    public JFXCheckBox registreCheckD;
+    public JFXCheckBox ramCheckD;
+    public JFXCheckBox edrCheckD;
+    public JFXCheckBox autopsyCheckD;
+    public Button dynamicA;
     private String server_url ="http://127.0.0.1:5000";
     public Label staticStatus;
     public ProgressBar cpuProgressBar;
@@ -49,6 +66,12 @@ public class HelloController {
     public JFXCheckBox edrCheck;
     public JFXCheckBox autopsyCheck;
     private Stage primaryStage;
+
+    private Boolean Registre;
+    private Boolean Ram;
+    private Boolean Edr;
+    private Boolean Autopsy;
+
 
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
@@ -64,8 +87,7 @@ public class HelloController {
     private Button btnWindow2;
 
     @FXML
-    private Button btnWindow3;
-
+    private Label imageLabel;
     @FXML
     private Button btnWindow4;
 
@@ -79,46 +101,65 @@ public class HelloController {
     private ListView<String> clickableListView;
 
     @FXML
+    private Button staticA;
+
+    @FXML
+    private HBox analyzing;
+    @FXML
     private ProgressBar progressBar;
-    private ObservableList<String> listItems;
+    private ObservableList<Report> listReports;
+
+    private static ObservableList<String> listItems;
 
     @FXML
     private void openWindow1() throws IOException {
         replaceSceneContent("StaticAnalysis.fxml", "Analiza statica");
+        primaryStage.setWidth(320);
+
     }
 
     @FXML
     private void openWindow2() throws IOException {
         replaceSceneContent("DynamicAnalysis.fxml", "Analiza dinamica");
+        primaryStage.setWidth(400);
+
     }
 
     @FXML
     private void openWindow3() throws IOException {
         replaceSceneContent("Report.fxml", "Raport");
+        primaryStage.setWidth(320);
+
     }
 
     @FXML
     private void openWindow4() throws IOException {
         replaceSceneContent("Configurare.fxml", "Configurare");
+        primaryStage.setWidth(320);
+
     }
+
 
     @FXML
     private void backFunction() throws IOException {
-        replaceSceneContent("Main.fxml", "MainWindow");
+        replaceSceneContent("Main.fxml", "Digital Forensics");
+        primaryStage.setWidth(320);
     }
     @FXML
     private void setSendConfig() throws IOException {
-        URL url = new URL(server_url+"/config");
 
-        JSONObject jsonBody = new JSONObject();
-        jsonBody.put("registre", registreCheck.isSelected());
-        jsonBody.put("ram", ramCheck.isSelected());
-        jsonBody.put("edr", edrCheck.isSelected());
-        jsonBody.put("autopsy", autopsyCheck.isSelected());
 
-        String postResponse = sendPostRequest(url, jsonBody.toString());
-
-        replaceSceneContent("Main.fxml", "MainWindow");
+//        URL url = new URL(server_url+"/config");
+//
+//        JSONObject jsonBody = new JSONObject();
+//        jsonBody.put("registre", registreCheck.isSelected());
+//        jsonBody.put("ram", ramCheck.isSelected());
+//        jsonBody.put("edr", edrCheck.isSelected());
+//        jsonBody.put("autopsy", autopsyCheck.isSelected());
+//
+//        String postResponse = sendPostRequest(url, jsonBody.toString());
+//
+//        replaceSceneContent("Main.fxml", "MainWindow");
     }
     private void replaceSceneContent(String fxmlFile, String title) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainWindow.class.getResource(fxmlFile));
@@ -168,46 +209,35 @@ public class HelloController {
         }
         if(clickableListView !=null)
         {
-            listItems = FXCollections.observableArrayList();
+            if(listItems==null) {
+                listItems = FXCollections.observableArrayList();
+                listItems.add("Static 21.05.2024 13:12");
+                listItems.add("Dynamic 21.05.2024 12:12");
+                listItems.add("Static 20.05.2024 14:12");
+                listItems.add("Static 20.05.2024 12:09");
+                listItems.add("Dynamic 20.05.2024 09:35");
+                listItems.add("Static 19.05.2024 12:12");
+                listItems.add("Dynamic 19.05.2024 12:12");
+                listItems.add("Static 18.05.2024 14:12");
+                listItems.add("Static 17.05.2024 12:09");
+                listItems.add("Dynamic 16.05.2024 09:35");
+            }
             clickableListView.setItems(listItems);
-
 
             clickableListView.setOnMouseClicked((MouseEvent event) -> {
                 String selectedItem = clickableListView.getSelectionModel().getSelectedItem();
                 if (selectedItem != null) {
-                    // Handle the click event for the selected item
-                    handleItemClick(selectedItem);
+                    try {
+                        replaceSceneContent("Configurare.fxml", "Raport");
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             });
 
-            URL getUrl = new URL(server_url +"/rapoarte");
 
-            String getResponse = sendGetRequest(getUrl);
-            JSONObject jsonResponse = new JSONObject(getResponse);
-            String jsonString = jsonResponse.optString("reports");
-            JSONArray jsonArray = new JSONArray(jsonString);
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-                appendItemToList(jsonArray.getString(i));
-
-            }
         }
-        if(optionsLabel != null)
-        {
-            URL getUrl = new URL(server_url +"/config");
 
-            String getResponse = sendGetRequest(getUrl);
-            JSONObject jsonResponse = new JSONObject(getResponse);
-            Boolean registre = Boolean.valueOf(jsonResponse.optString("registre"));
-            Boolean ram = Boolean.valueOf(jsonResponse.optString("ram"));
-            Boolean edr = Boolean.valueOf(jsonResponse.optString("edr"));
-            Boolean autopsy = Boolean.valueOf(jsonResponse.optString("autopsy"));
-
-            registreCheck.setSelected(registre);
-            ramCheck.setSelected(ram);
-            edrCheck.setSelected(edr);
-            autopsyCheck.setSelected(autopsy);
-        }
 
     }
 
@@ -245,6 +275,133 @@ public class HelloController {
         handleSendRequest();
 
     }
+    //Select image from storage method
+    @FXML
+    private void selectImageFucntion() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select a static analisys image");
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
+        );
+
+        imageLabel.setText(fileChooser.showOpenDialog(primaryStage).getName());
+        staticA.setDisable(false);
+
+    }
+    @FXML
+    private void generateImageFunction() {
+
+        imageLabel.setText("locaWindowsImage.E01");
+        staticA.setDisable(false);
+    }
+
+    @FXML
+    private void analyzeStatic(){
+        staticprogress.setVisible(true);
+        edrCheck.setDisable(true);
+        autopsyCheck.setDisable(true);
+        ramCheck.setDisable(true);
+        registreCheck.setDisable(true);
+        selectImage.setDisable(true);
+        generateImage.setDisable(true);
+
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3)));
+        timeline.setOnFinished(event -> {
+            staticprogress.setVisible(false);
+            staticA.setText("View report");
+            staticA.setOnAction(event1 -> {
+                try {
+                    openStaticReport();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        });
+        timeline.play();
+//        ReportGenerator generator = new ReportGenerator();
+//        Report report = generator.createReport(true);
+//        listReports.add(report);
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy HH.mm");
+        String formattedDate = "Static " + now.format(formatter);
+        listItems.add(formattedDate);
+    }
+
+    private void openStaticReport() throws IOException {
+        replaceSceneContent("Configurare.fxml", "Configurare");
+
+    }
+
+    @FXML
+    private void openDynamicReport() throws IOException {
+        replaceSceneContent("Configurare.fxml", "Configurare");
+        primaryStage.setWidth(320);
+
+    }
+    @FXML
+    private void AnalyzeDynamically(){
+        analyzing.setVisible(true);
+        registreCheckD.setDisable(true);
+        ramCheckD.setDisable(true);
+        edrCheckD.setDisable(true);
+        autopsyCheckD.setDisable(true);
+        dynamicA.setDisable(true);
+
+
+//set the timeline to last 5 seconds
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(5)));
+        //After the timeline is done, show the report button
+        timeline.setOnFinished(event -> {
+//            reportDynamic.setText("View report");
+            analyzed.setVisible(true);
+        });
+        timeline.play();
+        reportDynamic.setDisable(false);
+
+//        analyzing.setVisible(false);
+
+//        ReportGenerator generator = new ReportGenerator();
+//        Report report = generator.createReport(false);
+//        listReports.add(report);
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy HH.mm");
+        String formattedDate = "Dynamic " + now.format(formatter);
+        listItems.add(formattedDate);
+
+    }
+    @FXML
+    private void stopAnalyze(){
+        analyzing.setVisible(false);
+        reportDynamic.setOnAction(event -> {
+            try {
+                openDynamicReport();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        reportDynamic.setText("View report");
+
+    }
+    @FXML
+    private void gotoDetails(){
+        //open file 1 2 3 4.txt based on int
+        //in notepad
+
+
+            try {
+                // The path to the file
+                String filePath = "1.txt";
+
+                // Open Notepad with the file
+                ProcessBuilder processBuilder = new ProcessBuilder("notepad.exe", filePath);
+                processBuilder.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+    }
+
 
     public void handleSendRequest() {
         // Run the network request in a separate thread to avoid freezing the UI

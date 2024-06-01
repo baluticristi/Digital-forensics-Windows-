@@ -1,0 +1,20 @@
+Digital Forensics Report
+Date of Report: 21 May 2024
+
+System Information:
+
+Operating System: Windows 11 x64, n2202
+Processor: Ryzen 7 4800 Zen 2 Renoir architecture
+Memory: 16GB RAM
+Storage: 512GB ROM
+
+RAM Check
+Status: FAIL
+
+Details:
+The RAM analysis involved scanning the memory for indicators of compromise and unauthorized processes. The following checks were performed:
+
+Memory Dumps: Collected and analyzed memory dumps for malicious code.
+Active Processes: Identified and reviewed running processes for suspicious activity.
+Volatile Data: Examined volatile data for signs of exploitation.
+Explanation: Anomalous memory patterns were detected, indicative of a potential memory-based attack. Unauthorized processes related to known malware were identified, requiring immediate remediation.

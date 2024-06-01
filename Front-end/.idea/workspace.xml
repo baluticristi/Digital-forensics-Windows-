@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07ed4744-e6b9-4a7c-a655-c63a7d219ac7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Back-end/BuildAndPush.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/analyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/analyzer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/docker_analyzer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/docker_licenta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/docker_report" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/main_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/main_server.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/report_deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Back-end/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Back-end/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Back-end/report_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/ReportGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Python app/Views/__init__py.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Python app/Views/dynamic_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Python app/Views/main_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Python app/Views/report_history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Python app/Views/static_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/frontend/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Configurare.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Configurare.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/frontend/DynamicAnalysis.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/frontend/DynamicAnalysis.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/frontend/Report.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/frontend/StaticAnalysis.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/frontend/StaticAnalysis.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +33,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,21 +70,27 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/balut/OneDrive/Crimsti/Licenta/Digital-forensics-Windows-/Front-end/src/main/resources/com/example/frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/An 4 Sem 2/Licenta/Digital-forensics-Windows-/Front-end/src/main/resources&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.frontend" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\An 4 Sem 2\Licenta\Digital-forensics-Windows-\Front-end\src\main\resources" />
       <recent name="C:\Users\balut\OneDrive\Crimsti\Licenta\Digital-forensics-Windows-\Front-end\src\main\resources\com\example\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\An 4 Sem 2\Licenta\Digital-forensics-Windows-\Front-end\src\main\resources" />
+      <recent name="D:\An 4 Sem 2\Licenta\Digital-forensics-Windows-\Front-end\src\main\resources\com\example\frontend" />
       <recent name="C:\Users\balut\OneDrive\Crimsti\Licenta\Digital-forensics-Windows-\Front-end\src\main\resources" />
     </key>
   </component>
@@ -127,11 +127,32 @@
       <workItem from="1706641331408" duration="2389000" />
       <workItem from="1706690941333" duration="749000" />
       <workItem from="1711955706705" duration="1536000" />
+      <workItem from="1715712300989" duration="106000" />
+      <workItem from="1716140267808" duration="8330000" />
+      <workItem from="1716188818172" duration="12708000" />
+      <workItem from="1716283255244" duration="3122000" />
+      <workItem from="1716406255522" duration="2356000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/HelloController.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/frontend/controllers/HelloController.java</url>
+          <line>368</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,31 +9,39 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.lang.Double?>
 <StackPane xmlns = "http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="com.example.frontend.controllers.HelloController"
            prefWidth="300"
            prefHeight="400"
            alignment="CENTER"
-           stylesheets="@../../../MainStyle.css"
->
+           stylesheets="@../../../MainStyle.css">
+
+
+
   <VBox spacing="10" alignment="CENTER">
+    <JFXButton fx:id="help" onAction="#backFunction" styleClass="button-pop" text="Help" />
 
     <ImageView fitWidth="100" fitHeight="100" preserveRatio="true" fx:id="logoImageView">
       <Image url="@../../../logo.png"/>
     </ImageView>
 
-
+    <!-- Buttons Section -->
     <VBox spacing="20" alignment="CENTER">
       <padding>
         <Insets top="20" right="20" bottom="20" left="20"/>
       </padding>
 
       <JFXButton fx:id="btnWindow1" onAction="#openWindow1" styleClass="button-pop" text="Analiza Statica"/>
-      <JFXButton text="Analiza Dinamica" fx:id="btnWindow2" onAction="#openWindow2"  styleClass="button-pop"/>
-      <JFXButton text="Vizualizare Rapoarte" fx:id="btnWindow3" onAction="#openWindow3"  styleClass="button-pop"/>
-      <JFXButton text="Editare Configuratii" fx:id="btnWindow4" onAction="#openWindow4"  styleClass="button-pop"/>
-
+      <JFXButton text="Analiza Dinamica" fx:id="btnWindow2" onAction="#openWindow2" styleClass="button-pop"/>
+      <JFXButton text="Vizualizare Rapoarte" fx:id="btnWindow3" onAction="#openWindow3" styleClass="button-pop"/>
     </VBox>
   </VBox>
+
+
+
+
 </StackPane>

@@ -1,30 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="com.example.frontend.controllers.HelloController"
            stylesheets="@../../../MainStyle.css">
     <Button text="Back" fx:id="backButton" onAction="#backFunction"
-            StackPane.alignment="TOP_LEFT" styleClass="button-pop"> <!-- Aligns this button to the top left -->
+            StackPane.alignment="TOP_LEFT" styleClass="button-pop">
         <StackPane.margin>
             <Insets top="20" left="20"></Insets>
         </StackPane.margin>
     </Button>
-    <Label fx:id="staticStatus" text="The files are ready to analyze">
+    <Button text="Select image" fx:id="selectImage" onAction="#selectImageFucntion"
+            StackPane.alignment="TOP_LEFT" styleClass="button-pop">
         <StackPane.margin>
-            <Insets top="60" />
+            <Insets top="80" left="20"></Insets>
+        </StackPane.margin>
+    </Button>
+    <Button text="Generate image" fx:id="generateImage" onAction="#generateImageFunction"
+                         StackPane.alignment="TOP_LEFT" styleClass="button-pop">
+    <StackPane.margin>
+        <Insets top="80" left="150"></Insets>
+    </StackPane.margin>
+    </Button>
+
+    <Label fx:id="imageLabel" text="No image selected" >
+        <StackPane.margin>
+            <Insets top="-100" left="0"></Insets>
         </StackPane.margin>
     </Label>
-    <ProgressBar fx:id="progressBar" prefWidth="200" />
+    <ProgressIndicator fx:id="staticprogress" visible="false" >
+        <StackPane.margin>
+            <Insets top="80" left="120"></Insets>
+        </StackPane.margin>
 
-    <Button fx:id="sendConfig" onAction="#runProgressBar" styleClass="button-pop" text="Analyze" StackPane.alignment="BOTTOM_CENTER"> <!-- Aligns this button to the top left -->
+    </ProgressIndicator>
+
+    <VBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 40;">
+        <JFXCheckBox fx:id="registreCheck" text="Verify Registries" />
+        <JFXCheckBox fx:id="ramCheck" text="Verify RAM" />
+        <JFXCheckBox fx:id="edrCheck" text="Enable EDR" />
+        <JFXCheckBox fx:id="autopsyCheck" text="Allow Autopsy plugin" />
+        <StackPane.margin>
+            <Insets top="140.0" />
+        </StackPane.margin>
+    </VBox>
+
+    <Button fx:id="staticA" onAction="#analyzeStatic" styleClass="button-pop" text="Analyze" StackPane.alignment="BOTTOM_CENTER" disable="true">
         <StackPane.margin>
             <Insets bottom="20" />
         </StackPane.margin>

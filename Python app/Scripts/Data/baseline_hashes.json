@@ -1,0 +1,242 @@
+[
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\baseline_hashes.json",
+        "size": 12184,
+        "creation_time": 1716833417.9389906,
+        "modification_time": 1716833426.9299576,
+        "access_time": 1716833504.9487026,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "de4bc5b7fced038f51c0209c53ca0108d171b72aa019f2aca0b8730f02c38bb4",
+        "md5": "e07b930d7dd929c2b26cbb60ec8ae98c"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\baseline_metadata.json",
+        "size": 7832,
+        "creation_time": 1716833009.3702059,
+        "modification_time": 1716833009.3711913,
+        "access_time": 1716833504.9497316,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "22018768b93c6d0b4288a81a4bb4b7fc911705efd6357b8a94c0e91f4f1dc8a0",
+        "md5": "76f04196f0338a21c6b5f3f03ef70044"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\change_log.json",
+        "size": 20052,
+        "creation_time": 1716833417.9479868,
+        "modification_time": 1716833426.964411,
+        "access_time": 1716833504.9497316,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "8a61d63fdeebdcaa3b26a18fc4f2a6944b760c081856e015a74a7e26a08826d0",
+        "md5": "0bccee62d6c95167a862f5d44e5f2579"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\main.py",
+        "size": 237,
+        "creation_time": 1712302294.6169422,
+        "modification_time": 1715712655.375921,
+        "access_time": 1716833504.9497316,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "d0ec7ed59f01eb1641099e4806a6a017f1877ab1e0baf805c7d7566a755f7fb9",
+        "md5": "396d5d8a5d2357ef1bf9ca7afe4df3c8"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\.gitignore",
+        "size": 184,
+        "creation_time": 1712302299.665498,
+        "modification_time": 1712302299.7876017,
+        "access_time": 1716833504.9497316,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "1bfdece3645ed8ed356030f22cc2004dc3f401ff060ac3d24de811c3bcd82e16",
+        "md5": "9117c65ed9ff083256a86af10ab88d65"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\misc.xml",
+        "size": 297,
+        "creation_time": 1715708455.9812038,
+        "modification_time": 1715708455.9821997,
+        "access_time": 1716833504.9507313,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "b8a2d2e34c28199194abb9a1a05448a4d02ec951f2c8d08847139c017a6278ab",
+        "md5": "ba94e146227bd18a7d0440195cdbf129"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\vcs.xml",
+        "size": 188,
+        "creation_time": 1712303035.9779801,
+        "modification_time": 1712303035.9800942,
+        "access_time": 1716833504.9507313,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "d0df76de3a966f51606b564edccc430dbc21c32ee5c3f35dccf95597fad81392",
+        "md5": "1a16809a3a296b65911ab7b1b4ce2459"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\workspace.xml",
+        "size": 8934,
+        "creation_time": 1716833405.9075973,
+        "modification_time": 1716833405.9085999,
+        "access_time": 1716833504.9507313,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "da96752102fcf301aadeb8be825f5c335b91f4ba598c64a6c9f9fb648086ed47",
+        "md5": "7bcb9385852f5875696a7314006ca502"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\inspectionProfiles\\profiles_settings.xml",
+        "size": 174,
+        "creation_time": 1712303036.0131,
+        "modification_time": 1712303036.0140958,
+        "access_time": 1716833504.9507313,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "6172c5997eeb3cd19c9ca2b5b97d6e2983cdd1fa60b2460d7bbb74055edcaa46",
+        "md5": "05dbe611f5bdb7a801adb3f064d4bfa9"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\.idea\\inspectionProfiles\\Project_Default.xml",
+        "size": 653,
+        "creation_time": 1712303035.8404455,
+        "modification_time": 1712303035.866076,
+        "access_time": 1716833504.9507313,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "1a9a71fabfe071568959072de65fe6383a8e7e69ec225e859785c5cd04fb2eee",
+        "md5": "6c3af182818f0f9ffcf6934d4baf04d1"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Resources\\logo.png",
+        "size": 1048106,
+        "creation_time": 1715707215.5898743,
+        "modification_time": 1712302170.6228669,
+        "access_time": 1716833504.9547508,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "12070c23ceb80077b0d913ebd0fa312a9ea765ab587e2b8aa4acb2f853a60d36",
+        "md5": "36e7f0f6bd5b0c3d49adfebef3cd9364"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Scripts\\file_system.py",
+        "size": 4409,
+        "creation_time": 1716829179.5707152,
+        "modification_time": 1716833518.3849316,
+        "access_time": 1716833518.8426275,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "807c9253552fb90c1e64f2a9a6304c3fd8077f9086e8fbedb045c7e3f8907401",
+        "md5": "0cd9dcb6a4b8e78129b64a6e4305fb95"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Scripts\\memory.py",
+        "size": 0,
+        "creation_time": 1716829235.9616547,
+        "modification_time": 1716829235.9616547,
+        "access_time": 1716829235.9616547,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Scripts\\network.py",
+        "size": 0,
+        "creation_time": 1716829210.6034546,
+        "modification_time": 1716829210.6034546,
+        "access_time": 1716829210.6034546,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Scripts\\process.py",
+        "size": 0,
+        "creation_time": 1716829228.391905,
+        "modification_time": 1716829228.391905,
+        "access_time": 1716829228.391905,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Scripts\\registry.py",
+        "size": 0,
+        "creation_time": 1716829192.0926175,
+        "modification_time": 1716829192.0926175,
+        "access_time": 1716829192.0926175,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\dynamic_analysis.py",
+        "size": 0,
+        "creation_time": 1715706715.7092524,
+        "modification_time": 1715706715.7092524,
+        "access_time": 1715706715.7092524,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\main_page.py",
+        "size": 2384,
+        "creation_time": 1715706762.6175382,
+        "modification_time": 1715713087.452783,
+        "access_time": 1716833518.758482,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "74623a1c1c5b4abecf230a56ed1d3811d4e193182cc4902bc03ffa9c96c56081",
+        "md5": "dbd3c516c42d0db6f46de2aa63842f57"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\report_history.py",
+        "size": 0,
+        "creation_time": 1715706750.8159564,
+        "modification_time": 1715706750.8159564,
+        "access_time": 1715706750.8159564,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\static_analysis.py",
+        "size": 2411,
+        "creation_time": 1715706699.7036607,
+        "modification_time": 1715713037.77951,
+        "access_time": 1716833518.7594838,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "3808e8b91cc8fd99e9855eac1213802c261fac81b5a94ca6eb85b9f2a31f49c5",
+        "md5": "b1f97803d2e3506f16edefbd1ccbea99"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\__init__py.py",
+        "size": 0,
+        "creation_time": 1715706648.1473582,
+        "modification_time": 1715706648.1473582,
+        "access_time": 1715706648.1473582,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "md5": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\__pycache__\\main_page.cpython-312.pyc",
+        "size": 3431,
+        "creation_time": 1715712982.702235,
+        "modification_time": 1715712982.7029212,
+        "access_time": 1716833504.9577477,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "45a8420876c1a591f33992b4011d747b0dab91c4fcd6562e9f07020008350189",
+        "md5": "5f62d8e42cc433980bba3d82364bbf5e"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\__pycache__\\main_page.cpython-36.pyc",
+        "size": 2252,
+        "creation_time": 1715707983.0066419,
+        "modification_time": 1715707983.0071511,
+        "access_time": 1716833504.958751,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "588e7485657f4c1cd29c7a419c81dd674d3c69f508fd7554183553f047323ec1",
+        "md5": "5a3b470c1e69b8f0e0958245bde1d75d"
+    },
+    {
+        "file_path": "D:\\An 4 Sem 2\\Licenta\\Digital-forensics-Windows-\\Python app\\Views\\__pycache__\\static_analysis.cpython-312.pyc",
+        "size": 3420,
+        "creation_time": 1715713025.975469,
+        "modification_time": 1715713025.9764662,
+        "access_time": 1716833504.958751,
+        "permissions": "-rw-rw-rw-",
+        "sha256": "6372b99c022d87c2ed5afc6b906e119f7a41a85deb90f75c65bd4839a184de15",
+        "md5": "a603455ea6ee9f145d0ea23bb3a465fa"
+    }
+]

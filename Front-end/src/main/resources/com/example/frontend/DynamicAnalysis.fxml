@@ -6,52 +6,38 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import com.jfoenix.controls.JFXCheckBox?>
 <AnchorPane xmlns="http://javafx.com/javafx"
-           xmlns:fx="http://javafx.com/fxml"
-           fx:controller="com.example.frontend.controllers.HelloController"
-           prefHeight="400.0" prefWidth="600.0"
-           stylesheets="@../../../MainStyle.css">
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.frontend.controllers.HelloController"
+            prefHeight="800.0" minWidth="800.0"
+            stylesheets="@../../../MainStyle.css">
     <Button text="Back" fx:id="backButton" onAction="#backFunction"
             styleClass="button-pop" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"/>
+    <VBox alignment="TOP_LEFT"  AnchorPane.topAnchor="70" AnchorPane.leftAnchor="20">
+        <Label text="Windows 11 x64, n2202" />
+        <Label text="Ryzen 7 4800 Zen 2 Renoir architecture" />
+        <Label text="16GB DDR4 RAM" />
+        <Label text="512GB NVMe SSD" />
+        <Label text="Nvidia RTX 3060" />
+    </VBox>
 
-    <Label text="Dynamic Analysis" AnchorPane.topAnchor="70" AnchorPane.leftAnchor="100" />
+    <HBox fx:id="analyzing" AnchorPane.topAnchor="100" AnchorPane.leftAnchor="250" spacing="10" alignment="CENTER_LEFT" visible="false">
+        <ProgressIndicator fx:id="progressIndicator" />
+        <Label text="Analyzing" />
+    </HBox>
+    <HBox fx:id="analyzed" AnchorPane.topAnchor="180" AnchorPane.leftAnchor="270" spacing="10" alignment="CENTER_LEFT" visible="false">
+        <Label text="Issue found" style="-fx-text-fill: red; -fx-font-weight: bold;" />
+    </HBox>
 
-    <ProgressIndicator fx:id="progressIndicator" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="120" />
+    <VBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 40;" AnchorPane.topAnchor="130">
+        <JFXCheckBox fx:id="registreCheckD" text="Monitor Registries" />
+        <JFXCheckBox fx:id="ramCheckD" text="Monitor RAM" />
+        <JFXCheckBox fx:id="edrCheckD" text="Monitor EDR" />
+        <JFXCheckBox fx:id="autopsyCheckD" text="Monitor with Autopsy" />
+    </VBox>
 
-    <GridPane AnchorPane.topAnchor="190" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="40">
-        <columnConstraints>
-            <ColumnConstraints percentWidth="50" />
-            <ColumnConstraints percentWidth="50" />
-        </columnConstraints>
-
-        <rowConstraints>
-            <RowConstraints percentHeight="50" />
-            <RowConstraints percentHeight="50" />
-        </rowConstraints>
-
-        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
-            <Label text="CPU Usage" />
-            <ProgressBar fx:id="cpuProgressBar" progress="0.5" />
-            <Label text="50%" />
-        </VBox>
-
-        <VBox GridPane.columnIndex="1" GridPane.rowIndex="0">
-            <Label text="Memory Usage" />
-            <ProgressBar fx:id="memoryProgressBar" progress="0.7" />
-            <Label text="70%" />
-        </VBox>
-
-        <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
-            <Label text="Disk Space" />
-            <ProgressBar fx:id="diskProgressBar" progress="0.3" />
-            <Label text="30%" />
-        </VBox>
-
-        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
-            <Label text="Network Activity" />
-            <ProgressBar fx:id="networkProgressBar" progress="0.8" />
-            <Label text="80%" />
-        </VBox>
-    </GridPane>
+    <Button fx:id="dynamicA" alignment="BOTTOM_CENTER" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="100" onAction="#AnalyzeDynamically" styleClass="button-pop" text="Analyze"/>
+    <Button fx:id="reportDynamic" alignment="BOTTOM_CENTER" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="100" onAction="#stopAnalyze" styleClass="button-pop" text="Stop" disable="true"/>
 
 </AnchorPane>
