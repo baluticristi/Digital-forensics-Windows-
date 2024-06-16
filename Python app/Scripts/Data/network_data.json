@@ -1,0 +1,306 @@
+{
+    "active_connections": [
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3654",
+            "raddr": "172.64.155.141:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:2937",
+            "raddr": "185.60.218.53:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3774",
+            "raddr": "172.64.155.141:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3651",
+            "raddr": "172.64.155.141:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:49409",
+            "raddr": "20.199.120.182:443",
+            "status": "ESTABLISHED",
+            "pid": 8656
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:44878",
+            "raddr": "64.233.166.188:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3822",
+            "raddr": "20.250.119.64:443",
+            "status": "ESTABLISHED",
+            "pid": 13516
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3888",
+            "raddr": "185.26.182.112:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3738",
+            "raddr": "188.114.96.8:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3881",
+            "raddr": "82.78.147.8:443",
+            "status": "ESTABLISHED",
+            "pid": 14080
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3603",
+            "raddr": "172.64.155.141:443",
+            "status": "ESTABLISHED",
+            "pid": 24620
+        },
+        {
+            "fd": -1,
+            "family": "AF_INET",
+            "type": "SOCK_STREAM",
+            "laddr": "192.168.1.129:3830",
+            "raddr": "140.82.112.21:443",
+            "status": "ESTABLISHED",
+            "pid": 13516
+        }
+    ],
+    "network_interfaces": {
+        "Local Area Connection": [
+            {
+                "family": "AF_LINK",
+                "address": "00-FF-3A-2B-D6-7A",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.96.132",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "OpenVPN TAP-Windows6": [
+            {
+                "family": "AF_LINK",
+                "address": "00-FF-6E-CC-C3-53",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.102.161",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Local Area Connection* 1": [
+            {
+                "family": "AF_LINK",
+                "address": "C8-B2-9B-A0-2B-8F",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.33.226",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Local Area Connection* 2": [
+            {
+                "family": "AF_LINK",
+                "address": "CA-B2-9B-A0-2B-8E",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.22.43",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "VMware Network Adapter VMnet1": [
+            {
+                "family": "AF_LINK",
+                "address": "00-50-56-C0-00-01",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "192.168.57.1",
+                "netmask": "255.255.255.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "VMware Network Adapter VMnet8": [
+            {
+                "family": "AF_LINK",
+                "address": "00-50-56-C0-00-08",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "192.168.47.1",
+                "netmask": "255.255.255.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Wi-Fi": [
+            {
+                "family": "AF_LINK",
+                "address": "C8-B2-9B-A0-2B-8E",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "192.168.1.129",
+                "netmask": "255.255.255.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Ethernet": [
+            {
+                "family": "AF_LINK",
+                "address": "00-FF-20-A5-4C-2F",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.164.1",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Bluetooth Network Connection": [
+            {
+                "family": "AF_LINK",
+                "address": "C8-B2-9B-A0-2B-92",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "169.254.3.52",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "vEthernet (Default Switch)": [
+            {
+                "family": "AF_LINK",
+                "address": "00-15-5D-0E-CF-81",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET",
+                "address": "172.19.112.1",
+                "netmask": "255.255.240.0",
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET6",
+                "address": "fe80::c9bd:514a:ea2d:57b4",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "OpenVPN Data Channel Offload": [
+            {
+                "family": "AF_INET",
+                "address": "169.254.9.127",
+                "netmask": "255.255.0.0",
+                "broadcast": null,
+                "ptp": null
+            }
+        ],
+        "Loopback Pseudo-Interface 1": [
+            {
+                "family": "AF_INET",
+                "address": "127.0.0.1",
+                "netmask": "255.0.0.0",
+                "broadcast": null,
+                "ptp": null
+            },
+            {
+                "family": "AF_INET6",
+                "address": "::1",
+                "netmask": null,
+                "broadcast": null,
+                "ptp": null
+            }
+        ]
+    }
+}
